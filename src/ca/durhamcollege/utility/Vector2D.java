@@ -193,4 +193,20 @@ public class Vector2D
 
         return (float)(Math.sqrt(delta_x * delta_x + delta_y * delta_y));
     }
+
+    public static final Vector2D random (final Vector2D start, final Vector2D end)
+    {
+        // generate random X value
+        float minX = Mathf.Min(start.getX(), end.getX());
+        float maxX = Mathf.Max(start.getX(), end.getX());
+        float randomX = Mathf.RandomRange(minX, maxX);
+        //float randomX = (m_rand.nextFloat() * (maxX - minX)) + minX;
+        // generate random Y value
+        float minY = Mathf.Min(start.getY(), end.getY());
+        float maxY = Mathf.Max(start.getY(), end.getY());
+        float randomY = Mathf.RandomRange(minY, maxY);
+        //float randomY = (m_rand.nextFloat() * (maxY - minY)) + minY;
+
+        return new Vector2D(randomX, randomY);
+    }
 }
