@@ -13,7 +13,7 @@ public class Main {
     {
         Scanner keyboard = new Scanner(System.in);
         String prompt = "";
-        int numOfPoints = 6;
+        int numOfPoints = 4;
 
         // instantiates the collection collector (empty)
         Vector<Vector2D> points = new Vector<Vector2D>();
@@ -53,9 +53,9 @@ public class Main {
             points.add(randomVector2D);
         }
 
-        System.out.printf("Magnitude of first random point is: %.3f \n", points.get(6).getMagnitude());
-        System.out.printf("Magnitude of second random point is: %.3f \n", points.get(7).getMagnitude());
-        System.out.printf("Distance between first random point and second random point is: %.3f \n", Vector2D.distance(points.get(6), points.get(7)));
+        System.out.printf("Magnitude of first random point is: %.3f \n", points.get(4).getMagnitude());
+        System.out.printf("Magnitude of second random point is: %.3f \n", points.get(5).getMagnitude());
+        System.out.printf("Distance between first random point and second random point is: %.3f \n", Vector2D.distance(points.get(4), points.get(5)));
         System.out.println("--------------------------------------------------------------\n" );
     }
 }
